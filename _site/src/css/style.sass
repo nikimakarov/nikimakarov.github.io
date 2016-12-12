@@ -1,0 +1,455 @@
+@import normalize
+@import skeleton
+@import fonts
+@import meter
+
+body
+   font-family: 'Open Sans', sans-serif
+   background: whiteblue
+
+.box
+   z-index: 3
+   width: 100%
+   height: 100%
+   top: -5%
+   position: relative
+   gravity: center
+   height: 400px
+   background: linear-gradient(45deg, rgba(255,184,115,0.65) 0%,rgba(255,124,189,0.65) 50%,rgba(108,0,153,0.65) 100%)
+   repeat: no-repeat
+   overflow: hidden
+
+.quality
+	display: flex
+.name
+	color: white
+	background: #222
+	//text-transform: uppercase
+	text-align: center
+	font-size: 60px
+	position: absolute
+	top: 30%
+	padding-left: 20px
+	padding-right: 20px
+	@media(max-width: 500px)
+		font-size: 55px
+	@media(max-width: 450px)
+		font-size: 45px
+	@media(max-width: 373px)
+		font-size: 35px
+
+
+.desc
+	color: black
+	text-align: center
+	font-size: 40px
+	position: absolute
+	top: 57%
+	padding-left: 20px
+	padding-right: 20px
+	@media(max-width: 500px)
+		font-size: 30px
+
+.face-lockup
+	display: inline-block
+	align-items: center
+	height: 150px
+	width: 150px
+	margin-bottom: 20px
+	.face-img
+		width: 150px
+		height: 150px
+		border-radius: 50%
+		background: 
+			image: url(/images/portrait.jpg)
+			position: center
+			size: contain
+			repeat: no-repeat
+		border: black solid 2px
+
+.btn
+	background: linear-gradient(45deg,rgb(106, 177, 215) 0,rgb(51, 217, 222) 100%)
+	border-radius: 2px
+	box-shadow: 0px 2px 4px rgba(34,62,66,.25)
+	color: #fff
+	font-size: 18px
+	letter-spacing: 1px
+	padding: 16px 32px
+	text-decoration: none
+	text-transform: uppercase
+	-webkit-transition: box-shadow 1s ease
+	transition: box-shadow 1s ease
+	&:hover
+		box-shadow: 0px 4px 4px rgba(34,62,66,.5)
+		-webkit-transition: box-shadow 1s ease
+		transition: box-shadow 1s ease
+	
+	@media(max-width: 520px)
+		font-size: 10px
+		padding: 10px 20px
+.small
+    font-size: 10px
+    padding: 10px 20px
+
+h1
+  color: black
+  weight: 300
+  .margin-top
+		padding-top: 20px
+  font-size: 2.4em
+.goo
+	margin-top: 80px
+	margin-bottom: 200px
+
+.sidebar
+	height: 50px
+	width: fill
+	background: #222
+	visibility: visible
+	position: fixed
+	z-index: 4
+	opacity: 0
+	transition: all 0.2s ease-in-out
+	h1
+		padding-top: 5px
+		padding-left: 10px
+		margin-bottom: 10px
+		color: white
+	@media (max-width: 1015px)
+		h1
+			font-size: 25px
+			padding-top: 0
+		height: 35px
+
+.onwhite
+	color: black
+	font-size: 1.8em	
+	margin-left: 10px
+	@media (max-width: 1015px)
+		display: none
+
+h5
+	color: black
+	font-size: 1.6em
+	@media (max-width: 470px)
+		font-size: 1.3em
+
+
+a.button
+	font-weight: 700
+	color: black
+	&:hover
+		background:
+			color: white
+		transition: all 0.2s ease-in-out
+
+figure
+  margin: auto
+
+.content
+   position: relative
+   background: white
+   z-index: 2
+   margin-bottom: 250px
+   overflow: hidden
+   article
+     padding: 100px 50px 0px 50px
+     max-width: 700px
+     margin: 0 auto
+     text-align: center
+     @media (max-width: 500px)
+           padding: 70px 30px 0px 30px
+p
+	color: black
+	font-size: 1.2em
+
+img
+  max-width: 100%
+
+figcaption
+	color: white
+	weight: 200
+	font-size: 15px
+	bottom: 0px
+	left: -100%
+	position: absolute
+	padding: 2px 8px
+	background:  #ff5252
+	transition: all 0.4s ease-in-out
+	opacity: 0
+
+.pics
+	margin-bottom: 50px
+	display: flex
+	
+	figure
+		margin-bottom: 20px
+		opacity: 0
+		overflow: hidden
+		transform: translateX(-20px)
+		transition: all 0.3s ease-in-out
+		&.is-showing
+			opacity: 1
+			transform: translateX(0px)
+		img
+			display: block
+			transform: scale(2)
+			transition: all 0.4s ease-in-out
+		&:hover
+			figcaption
+				left: 0%
+				opacity: 1
+				@media (max-width: 500px)
+					font-size: 10px
+				@media (max-width: 447px)
+					display: none
+			img
+				transform: scale(1)
+		
+	@media (max-width: 550px)
+		.row.img-row
+			display: flex
+		figure
+			margin: 3px
+
+.large-window
+	height: 550px
+	width: 550px
+	margin: 0 auto
+	margin-bottom: 70px
+	background:
+		image: url(/images/works/developer.jpg)
+		position: block
+		repeat: repeat-y
+		attachment: fixed
+	background-size: 60%
+	margin-top: 70px
+	border-radius: 50%
+	position: relative
+	@media (max-width: 950px)
+			background-size: 68%
+	@media (max-width: 835px)
+			height: 400px
+			width: 400px
+			margin: 40px auto
+	@media (max-width: 640px)
+			background-size: 75%
+	@media (max-width: 553px)
+			background-size: 80%
+	@media(max-width: 520px)
+			height: 250px
+			width: 250px
+			margin: 20px auto
+	@media (max-width: 410px)
+			height: 200px
+			width: 200px
+			margin: 20px auto
+
+
+	.window-tint
+		background: linear-gradient(45deg, rgba(255,184,115,1) 0%,rgba(255,124,189,1) 50%,rgba(108,0,153,1) 100%)
+		position: absolute
+		border-radius: 50%
+		left: 0
+		right: 0
+		top: 0
+		bottom: 0
+		display: flex
+		align-items: center
+		justify-content: center
+
+	.promo-text
+		color: white
+		font-weight: 100
+		font-size: 50px
+		line-height: 1.2
+		@media(max-width: 520px)
+			font-size: 30px
+
+		.strong
+			display: block
+			color: white
+			font-weight: 100
+			font-size: 30px
+		span
+			color: rgba(255,255,255,0.6)
+			font:
+				style: italic
+				weight: 300
+				size: 18px
+			
+		.window-cta
+			font-size: 20px
+			text-decoration: none
+			color: white
+			border:  3px solid white
+			padding: 6px 20px
+			transition: all 0.2s ease-in-out
+			
+			&:hover
+				background: white
+				color: black
+	
+	
+.blog-posts
+
+	margin-top: 50px
+	margin-bottom: 70px
+
+	@media (max-width: 757px)
+		display: flex
+	
+	@media(max-width: 550px)
+		display: block
+
+	.post
+		border: 1px solid #e1e1e1
+		padding: 20px 0
+		position: relative
+
+		@media (max-width: 835px)
+			font:
+				size: 13px
+		@media (max-width: 700px)
+			img
+				display: none
+		@media (max-width: 550px)
+			margin: 10px 0
+			img
+				display: block
+
+	.post-1
+		transform: translate(100px, 20px)
+		background: #ffdef6
+		@media (max-width: 700px)
+			transform: none
+
+	.post-2
+		z-index: 2
+		background: #e2d0ff 
+	.withmargin
+		margin: 7px 0
+	.post-3
+		transform: translate(-100px, 20px)
+		background: #ccffea
+		@media (max-width: 700px)
+			transform: none
+
+.p2
+        font-size: 1.1em
+        padding: 10px 0 20px 0
+
+.location
+	padding: 10px
+	margin-top: 10px
+	position: relative
+	img
+		display: inline-block
+		position: center
+		border: 1px solid lightgreen
+	h5
+		background-color: lightgreen
+	p
+		font-size: 0.7em
+	a.button
+		font-weight: 100
+		background:
+			color: lightgreen
+		color: black
+		&:hover
+			background:
+				color: #222
+			color: white
+			transition: all 0.2s ease-in-out
+
+footer
+	background: linear-gradient(45deg, rgba(255,184,115,0.65) 0%,rgba(255,124,189,0.65) 50%,rgba(108,0,153,0.65) 100%)
+	padding: 40px 0 10px 0
+	position: fixed
+	bottom: 0
+	width: 100%
+	visibility: hidden
+	p
+		margin-top: 15px
+		margin-bottom: 10px
+		color: white
+		font-size: 20px
+	strong
+		color: #222
+		font-weight: 100
+	ul
+		color: white
+		li
+			font-size: 80%
+			font-weight: 300
+	.footer-stuff
+		max-width: 640px
+		margin: 0 auto
+
+	a
+		color: white
+
+.contact
+	text-align: center
+	margin-bottom: 30px
+
+	h1
+		text-align: center
+		color: black
+
+	.social-links
+		max-width: 350px
+		margin: 30px auto 20px
+		display: flex
+		justify-content: space-around
+	
+		.icon-vk, .icon-be, .icon-sky, .icon-lin
+			width: 40px
+			transition: all .1s ease-in-out
+		
+			&:hover
+				transform: scale(1.8)
+		
+			@media(max-width: 470px)
+				width: 50px
+	
+	   .icon-vk
+			background: 
+                image: url(/images/icons/vk2.png)
+                size: contain            
+                repeat: no-repeat
+	
+		.icon-be
+			background: 
+                image: url(/images/icons/behance.png)
+                size: contain
+                repeat: no-repeat
+	
+		.icon-sky
+			background: 
+                image: url(/images/icons/skype.png)
+                size: contain
+                repeat: no-repeat
+	
+		.icon-lin
+			background: 
+                image: url(/images/icons/linkedin.png)
+                size: contain
+                repeat: no-repeat
+			height: 40px
+	
+	p
+		font: 
+			size: 18px
+			weight: 400
+		color: white
+		text-align: center
+		letter-spacing: 0.05em
+		clear: both
+		padding-top: 10px
+		transition
+
+		&:hover
+			color: #ea0894
+		@media(max-width: 354px)
+			font-size: 14px
