@@ -1259,8 +1259,8 @@ figcaption {
   @media (max-width: 300px) {
     .large-window {
       background-size: 85%;
-      height: 150px;
-      width: 150px; } }
+      height: 170px;
+      width: 170px; } }
   .large-window .window-tint {
     background: -webkit-linear-gradient(45deg, rgba(255, 184, 115, 0.9) 0%, rgba(255, 124, 189, 0.9) 50%, #6c0099 100%);
     background: linear-gradient(45deg, rgba(255, 184, 115, 0.9) 0%, rgba(255, 124, 189, 0.9) 50%, #6c0099 100%);
