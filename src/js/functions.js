@@ -62,7 +62,7 @@ $(window).scroll(function(){
 		
 		$('.large-window').css({'background-position': 'center ' + (wScroll - $('.large-window').offset().top) + 'px'});
 		
-		var opacity = (wScroll - $('.large-window').offset().top + 430) / (wScroll / 5);
+		var opacity = (wScroll - $('.large-window').offset().top + 500) / (wScroll / 12);
 		
 		$('.window-tint').css({'opacity': opacity});
 	}
