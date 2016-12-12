@@ -93,7 +93,7 @@ body
 
 h1
   color: black
-  weight: 300
+  weight: 100
   .margin-top
 		padding-top: 20px
   font-size: 2.4em
@@ -244,10 +244,14 @@ figcaption
 			height: 200px
 			width: 200px
 			margin: 20px auto
+	@media (max-width: 300px)
+			background-size: 85%
+			height: 100px
+			width: 100px
 
 
 	.window-tint
-		background: linear-gradient(45deg, rgba(255,184,115,1) 0%,rgba(255,124,189,1) 50%,rgba(108,0,153,1) 100%)
+		background: linear-gradient(45deg, rgba(255,184,115,0.9) 0%,rgba(255,124,189,0.9) 50%,rgba(108,0,153,1) 100%)
 		position: absolute
 		border-radius: 50%
 		left: 0

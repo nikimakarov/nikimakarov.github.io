@@ -837,7 +837,7 @@ there.
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 200;
   src: local("Open Sans"), local("OpenSans"), url(http://fonts.gstatic.com/s/opensans/v10/cJZKeOuBrn4kERxqtaUH3ZBw1xU1rKptJj_0jans920.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
 
@@ -851,7 +851,7 @@ there.
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
-  font-weight: 300;
+  font-weight: 100;
   src: local("Open Sans Light"), local("OpenSans-Light"), url(http://fonts.gstatic.com/s/opensans/v10/DXI1ORHCpsQm3Vp6mXoaTRampu5_7CjHW5spxoeN3Vs.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
 
@@ -1256,6 +1256,11 @@ figcaption {
       height: 200px;
       width: 200px;
       margin: 20px auto; } }
+  @media (max-width: 300px) {
+    .large-window {
+      background-size: 85%;
+      height: 150px;
+      width: 150px; } }
   .large-window .window-tint {
     background: -webkit-linear-gradient(45deg, rgba(255, 184, 115, 0.9) 0%, rgba(255, 124, 189, 0.9) 50%, #6c0099 100%);
     background: linear-gradient(45deg, rgba(255, 184, 115, 0.9) 0%, rgba(255, 124, 189, 0.9) 50%, #6c0099 100%);
